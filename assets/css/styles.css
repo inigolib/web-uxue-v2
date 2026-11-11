@@ -35,3 +35,15 @@
 .enarakabi-hero-progress span.is-active{background:#fff}
 @media(max-width:700px){.enarakabi-hero{min-height:470px;padding:90px 0 85px}.enarakabi-hero::before{background:linear-gradient(90deg,rgba(26,34,27,.75),rgba(26,34,27,.38))}.enarakabi-hero-progress{bottom:25px}}
 @media(prefers-reduced-motion:reduce){.enarakabi-hero-slide{transition:none;transform:none}}
+/* Enarakabi: separación del texto respecto a los bordes */
+.enarakabi-hero-content {
+  position: relative;
+  width: min(1180px, calc(100% - 96px));
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .enarakabi-hero-content {
+    width: calc(100% - 40px);
+  }
+}
