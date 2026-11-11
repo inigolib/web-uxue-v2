@@ -25,3 +25,7 @@ Abre la carpeta completa con VS Code y utiliza Live Server sobre `index.html`. N
 
 ## Publicar en GitHub Pages
 Sube el contenido de esta carpeta a la raíz de un repositorio, entra en Settings > Pages y selecciona Deploy from a branch > main > / (root).
+
+
+## Fotografías Enarakabi
+Se han incorporado 8 fotografías a `assets/img/enarakabi/` y una galería ampliable en `enarakabi.html`. Verificar los permisos de reutilización y la atribución fotográfica antes de publicar.
