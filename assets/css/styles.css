@@ -17,3 +17,20 @@
 .photo-close{right:8px;top:8px}.photo-prev{left:7px;top:50%}.photo-next{right:7px;top:50%}
 .photo-counter{text-align:center;margin:12px 0 0;font-size:13px}
 @media(max-width:800px){.enarakabi-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.photo-dialog{padding:48px 12px 36px}.photo-prev{left:0}.photo-next{right:0}}
+
+/* Portada fotográfica de Enarakabi: transición suave y estética editorial */
+.enarakabi-hero{position:relative;isolation:isolate;overflow:hidden;min-height:clamp(430px,66vh,690px);display:flex;align-items:center;padding:110px 0 105px;background:#454c3e;color:#fff}
+.enarakabi-hero-slides,.enarakabi-hero-slide{position:absolute;inset:0}
+.enarakabi-hero-slides{z-index:-2}
+.enarakabi-hero-slide{background-size:cover;background-position:center;opacity:0;transform:scale(1.035);transition:opacity 1.5s ease,transform 7s ease}
+.enarakabi-hero-slide.is-active{opacity:1;transform:scale(1)}
+.enarakabi-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(26,34,27,.72) 0%,rgba(26,34,27,.46) 54%,rgba(26,34,27,.24) 100%)}
+.enarakabi-hero-content{position:relative;width:100%}
+.enarakabi-hero h1{color:#fff;max-width:780px;text-wrap:balance;text-shadow:0 2px 20px rgba(0,0,0,.12)}
+.enarakabi-hero .eyebrow{color:#e7e0cb}
+.enarakabi-hero p{color:#f3efe6}
+.enarakabi-hero-progress{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);display:flex;gap:9px}
+.enarakabi-hero-progress span{width:30px;height:2px;background:rgba(255,255,255,.42);transition:background .4s ease}
+.enarakabi-hero-progress span.is-active{background:#fff}
+@media(max-width:700px){.enarakabi-hero{min-height:470px;padding:90px 0 85px}.enarakabi-hero::before{background:linear-gradient(90deg,rgba(26,34,27,.75),rgba(26,34,27,.38))}.enarakabi-hero-progress{bottom:25px}}
+@media(prefers-reduced-motion:reduce){.enarakabi-hero-slide{transition:none;transform:none}}
